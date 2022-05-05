@@ -1,0 +1,244 @@
+* {
+    margin : 0;
+    padding : 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* --------------Main page-------------------*/
+.container{
+    display: relative;
+}
+
+.icon {
+    display: relative;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 140px;
+    text-align: center;
+}
+
+#icon_square_me {
+    
+    height: 200px;
+    width: 200px;
+}
+
+#icon_square_me :hover{
+    width: 230px;
+    height: 230px;
+
+}
+
+.img_square{
+    width: 200px;
+    height: 200px;
+}
+
+
+.img_rectangle{
+    width: 250px;;
+    height: 450px;
+}
+
+
+#icon_square_hobbies {
+    height: 200px;
+    width: 200px;
+}
+
+#icon_square_hobbies :hover{
+    width: 230px;
+    height: 230px;
+}
+
+#icon_square_contact {
+    height: 200px;
+    width: 200px;
+}
+
+#icon_square_contact :hover{
+    width: 230px;
+    height: 230px;
+}
+
+#icon_square_degree {
+    height: 200px;
+    width: 200px;
+}
+
+#icon_square_degree :hover{
+    width: 230px;
+    height: 230px;
+}
+
+#icon_rectangle_xp {
+    margin: 10px 10px 10px 40px;
+    height: 450px;
+    width: 250px;
+}
+
+#icon_rectangle_xp :hover{
+    height: 480px;
+    width: 280px
+}
+
+#icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#display_square {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+
+}
+
+.st {
+    position: absolute;
+    padding-left: 5px;
+    color: aliceblue;
+}
+
+#blur.active {
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popupAboutMe {
+    color:aliceblue;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: rgb(0, 0, 0, 0.863);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupAboutMe.active {
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popupHobbies {
+    color:aliceblue;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: rgba(69, 69, 69, 0.863);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupHobbies.active {
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popupContact {
+    color:aliceblue;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: rgba(69, 69, 69, 0.863);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupContact.active {
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popupDegree {
+    color:aliceblue;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: rgba(143, 161, 4, 0.863);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupDegree.active {
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popupXp {
+    color:aliceblue;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: rgb(2, 112, 255, 0.863);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupXp.active {
+    top:50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+

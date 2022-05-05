@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/picture/logo_kj.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <title>Jéhanno Kilian</title>
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="title">
+            <h1>Hello__!</h1>
+        </div>
+        <div class="icon" id="icon">
+            <div id="display_square">
+                <div id="icon_square_me" onclick="toggle('popupAboutMe')">
+                    <p class="st">À propos de moi</p>
+                    <img class="img_square" id="test" src="picture/logo_kj.png" alt="logo">
+                </div>
+                <div id="icon_square_hobbies" onclick="toggle('popupHobbies')">
+                    <p class="st">Loisirs</p>
+                    <!-- Picture by Ben Kerckx on Pixabay -->
+                    <img class="img_square" src="picture/hobbies.jpg" alt="Pitcure by Kerckx on Pixabay">
+                </div>
+                <div id="icon_square_contact" onclick="toggle('popupContact')">
+                    <p class="st">Contact</p>
+                    <!-- Picture by niekverlaan on PixaBay-->
+                    <img class="img_square" src="picture/contact.jpg" alt="Picture by Niek Verlaan on PixaBay">
+                </div>
+                <div id="icon_square_degree" onclick="toggle('popupDegree')">
+                    <p class="st">Diplômes</p>
+                    <!-- Picture by _lil_foot_ on PixaBay-->
+                    <img class="img_square" src="picture/degrees.jpg" alt="Picture by lil_foot_ on PixaBay">
+                </div>
+            </div>
+            <div id="display_rectangle" onclick="toggle('popupXp')">
+                <div id="icon_rectangle_xp">
+                    <p class="st">Expériences</p>
+                    <!-- Picture by Pexel on PixaBay-->
+                    <img class="img_rectangle" src="picture/xp.jpg" alt="Picure by Pexel on PixaBay">
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--div hidden-->
+        <div id="popupAboutMe">
+            <p>À propos de moi</p><br>
+            <p>Motivé, créatif, déterminé, discret</p><br>
+            <a href="#" onclick="toggle('popupAboutMe')">[X]</a>
+        </div>
+        <div id="popupHobbies">
+            <p>Loisirs</p><br>
+            <ul>
+                <li>VTT</li>
+                <li>Jeux vidéo</li>
+                <li>Jeux de société</li>
+                <li>Dessin</li>
+            </ul><br>
+            <a href="#" onclick="toggle('popupHobbies')">[X]</a>
+        </div>
+        <div id="popupContact">
+            <p>Contact</p><br>
+            <p>Email : kilian.jehanno@gmail.com</p>
+            <p>LinkedIn : Jéhanno Kilian</p><br>
+            <a href="#" onclick="toggle('popupContact')">[X]</a>
+        </div>
+        <div id="popupDegree">
+            <p>Diplômes</p><br>
+            <p>.Développeur Web et Web Mobile (BAC +2) - 2022</p>
+            <p>.Technicien Supérieur Système et Réseau (BAC +2) - 2020</p>
+            <p>.Adjoint de sécurité - 2017</p>
+            <p>.Baccalauréat STMG - Spécialité gestion & finance - 2016</p><br>
+            <a href="#" onclick="toggle('popupDegree')">[X]</a>
+        </div>
+        <div id="popupXp">
+            <p>XP</p><br>
+            <p>.Stage développement Web(12/2021 - 01/2022): Participation au développement d'une application Web : correction de code, ajout de fonctionnalités.</p>
+            <p>Langages : PHP Symfony, HTML, CSS, Javascript</p><br>
+            <p>.Technicien proximité - TIBCO Services (02/2021 - 04/2021): Déploiement de poste informatique pour le client Rennes métropole. Transfert de données, environnement Windows, prise de RDV avec clients.</p><br>
+            <p>.Stage Pole Informatique - Mairie Vern-sur-Seiche (09/2020 - 11/2020): Administration GLPI, mise en place de CENTREON, Maintenance et assitance informatique.</p><br>
+
+            <a href="#" onclick="toggle('popupXp')">[X]</a>
+        </div>
+    
+</body>
+</html>
+<script src="app.js"></script>
