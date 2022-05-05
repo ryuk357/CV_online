@@ -219,7 +219,7 @@ h1 {
     #display_square {
         display: flex;
         flex-direction: column;
-        gap:10px;
+        gap: 10px;
     }
 
     #icon_square {
@@ -232,10 +232,35 @@ h1 {
         height: 300px;
     }
     
-    
+    #icon_rectangle_xp {
+        margin: 0px 10px 10px 10px;
+        height: 300px;
+        width: 300px;
+    }
+
     .img_rectangle{
-        width: 250px;;
-        height: 450px;
+        width: 300px;;
+        height: 300px;
+    }
+
+    #popupAboutMe {
+        width: 300px;
+    }
+
+    #popupHobbies {
+        width: 300px;
+    }
+
+    #popupContact {
+        width: 300px;
+    }
+
+    #popupDegree {
+        width: 300px;
+    }
+
+    #popupXp {
+        width: 300px;
     }
 }
 
