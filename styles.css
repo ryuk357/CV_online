@@ -7,6 +7,7 @@
 /* --------------Main page-------------------*/
 .container{
     display: relative;
+    justify-content: center;
 }
 
 .icon {
@@ -30,56 +31,12 @@ h1 {
     text-align: center;
 }
 
-#icon_square_me {
-    
+#icon_square {
     height: 200px;
     width: 200px;
 }
 
-#icon_square_me :hover{
-    width: 230px;
-    height: 230px;
-
-}
-
-.img_square{
-    width: 200px;
-    height: 200px;
-}
-
-
-.img_rectangle{
-    width: 250px;;
-    height: 450px;
-}
-
-
-#icon_square_hobbies {
-    height: 200px;
-    width: 200px;
-}
-
-#icon_square_hobbies :hover{
-    width: 230px;
-    height: 230px;
-}
-
-#icon_square_contact {
-    height: 200px;
-    width: 200px;
-}
-
-#icon_square_contact :hover{
-    width: 230px;
-    height: 230px;
-}
-
-#icon_square_degree {
-    height: 200px;
-    width: 200px;
-}
-
-#icon_square_degree :hover{
+#icon_square :hover{
     width: 230px;
     height: 230px;
 }
@@ -93,6 +50,17 @@ h1 {
 #icon_rectangle_xp :hover{
     height: 480px;
     width: 280px
+}
+
+.img_square{
+    width: 200px;
+    height: 200px;
+}
+
+
+.img_rectangle{
+    width: 250px;;
+    height: 450px;
 }
 
 #icon {
@@ -233,8 +201,43 @@ h1 {
 }
 
 
+/* responsive */
 
+@media (max-width:800px){
 
+    h1 {
+        font-size: 60px;
+    }
+
+    #icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #display_square {
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    #icon_square {
+        height: 300px;
+        width: 300px;
+    }
+
+    .img_square{
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    .img_rectangle{
+        width: 250px;;
+        height: 450px;
+    }
+}
 
 
 
